@@ -1,0 +1,9 @@
+<application>
+  <component name="CPPToolchains">
+    <option name="detectedVersion" value="5" />
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/local/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/6.1.0/bin/node" />
+  </component>
+</application>
