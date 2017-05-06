@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/engine/orderbook.h">
+			<Option target="fexchange"/>
+		</Unit>
 		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/main.cpp">
 			<Option target="fexchange"/>
 		</Unit>
