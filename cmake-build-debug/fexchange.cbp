@@ -5,7 +5,7 @@
 		<Option title="fexchange"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\common\;CMake Files\src\communication\;CMake Files\src\engine\;CMake Files\src\monitor\;CMake Files\src\protocols\;CMake Files\src\stroage\;CMake Files\src\util\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug"/>
@@ -37,6 +37,50 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="proto">
+				<Option output="/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/libproto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/protobuf/3.3.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 proto"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="proto/fast">
+				<Option output="/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/libproto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/protobuf/3.3.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 proto/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="fexchange">
 				<Option output="/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/fexchange" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src"/>
@@ -44,6 +88,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/protocols"/>
+					<Add directory="/usr/local/Cellar/protobuf/3.3.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -65,6 +111,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/protocols"/>
+					<Add directory="/usr/local/Cellar/protobuf/3.3.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -80,17 +128,44 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/engine/orderbook.h">
-			<Option target="fexchange"/>
-		</Unit>
 		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/main.cpp">
 			<Option target="fexchange"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/protocols/order.pb.cc">
+			<Option target="proto"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/protocols/order.pb.h">
+			<Option target="proto"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/protocols/order.pb.h.rule">
+			<Option target="proto"/>
 		</Unit>
 		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\common\"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/communication/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\communication\"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/engine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\engine\"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/monitor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\monitor\"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/protocols/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\protocols\"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/stroage/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\stroage\"/>
+		</Unit>
+		<Unit filename="/Users/fenicesun/WorkSpace/fexchange/src/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\util\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

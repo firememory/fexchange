@@ -1,0 +1,28 @@
+package msg;
+
+import public "google/protobuf/timestamp.proto";
+
+message Order
+{
+    required string id = 1;
+    required string security = 2;
+    required string account = 3;
+    required string broker = 4;
+    required google.protobuf.Timestamp time = 5;
+    enum TradeDirection {
+        BID = 0;
+        ASK = 1;
+    }
+    required TradeDirection tradeDirection = 6;
+    enum EntrustType {
+        MARKET = 0;
+        LIMIT  = 1;
+    }
+    required EntrustType entrustType = 7;
+    enum DealAttribute {
+        GFD = 0;
+        FAK = 1;
+        FOK = 2;
+    }
+    required DealAttribute dealAttr = 8;
+}

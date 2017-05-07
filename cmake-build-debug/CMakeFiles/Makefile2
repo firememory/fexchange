@@ -60,6 +60,169 @@ CMAKE_SOURCE_DIR = /Users/fenicesun/WorkSpace/fexchange
 CMAKE_BINARY_DIR = /Users/fenicesun/WorkSpace/fexchange/cmake-build-debug
 
 #=============================================================================
+# Directory level rules for directory src/common
+
+# Convenience name for "all" pass in the directory.
+src/common/all:
+
+.PHONY : src/common/all
+
+# Convenience name for "clean" pass in the directory.
+src/common/clean:
+
+.PHONY : src/common/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/common/preinstall:
+
+.PHONY : src/common/preinstall
+
+#=============================================================================
+# Directory level rules for directory src/communication
+
+# Convenience name for "all" pass in the directory.
+src/communication/all:
+
+.PHONY : src/communication/all
+
+# Convenience name for "clean" pass in the directory.
+src/communication/clean:
+
+.PHONY : src/communication/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/communication/preinstall:
+
+.PHONY : src/communication/preinstall
+
+#=============================================================================
+# Directory level rules for directory src/engine
+
+# Convenience name for "all" pass in the directory.
+src/engine/all:
+
+.PHONY : src/engine/all
+
+# Convenience name for "clean" pass in the directory.
+src/engine/clean:
+
+.PHONY : src/engine/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/engine/preinstall:
+
+.PHONY : src/engine/preinstall
+
+#=============================================================================
+# Directory level rules for directory src/monitor
+
+# Convenience name for "all" pass in the directory.
+src/monitor/all:
+
+.PHONY : src/monitor/all
+
+# Convenience name for "clean" pass in the directory.
+src/monitor/clean:
+
+.PHONY : src/monitor/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/monitor/preinstall:
+
+.PHONY : src/monitor/preinstall
+
+#=============================================================================
+# Directory level rules for directory src/protocols
+
+# Convenience name for "all" pass in the directory.
+src/protocols/all: src/protocols/CMakeFiles/proto.dir/all
+
+.PHONY : src/protocols/all
+
+# Convenience name for "clean" pass in the directory.
+src/protocols/clean: src/protocols/CMakeFiles/proto.dir/clean
+
+.PHONY : src/protocols/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/protocols/preinstall:
+
+.PHONY : src/protocols/preinstall
+
+#=============================================================================
+# Target rules for target src/protocols/CMakeFiles/proto.dir
+
+# All Build rule for target.
+src/protocols/CMakeFiles/proto.dir/all:
+	$(MAKE) -f src/protocols/CMakeFiles/proto.dir/build.make src/protocols/CMakeFiles/proto.dir/depend
+	$(MAKE) -f src/protocols/CMakeFiles/proto.dir/build.make src/protocols/CMakeFiles/proto.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target proto"
+.PHONY : src/protocols/CMakeFiles/proto.dir/all
+
+# Include target in all.
+all: src/protocols/CMakeFiles/proto.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/protocols/CMakeFiles/proto.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/protocols/CMakeFiles/proto.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles 0
+.PHONY : src/protocols/CMakeFiles/proto.dir/rule
+
+# Convenience name for target.
+proto: src/protocols/CMakeFiles/proto.dir/rule
+
+.PHONY : proto
+
+# clean rule for target.
+src/protocols/CMakeFiles/proto.dir/clean:
+	$(MAKE) -f src/protocols/CMakeFiles/proto.dir/build.make src/protocols/CMakeFiles/proto.dir/clean
+.PHONY : src/protocols/CMakeFiles/proto.dir/clean
+
+# clean rule for target.
+clean: src/protocols/CMakeFiles/proto.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/stroage
+
+# Convenience name for "all" pass in the directory.
+src/stroage/all:
+
+.PHONY : src/stroage/all
+
+# Convenience name for "clean" pass in the directory.
+src/stroage/clean:
+
+.PHONY : src/stroage/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/stroage/preinstall:
+
+.PHONY : src/stroage/preinstall
+
+#=============================================================================
+# Directory level rules for directory src/util
+
+# Convenience name for "all" pass in the directory.
+src/util/all:
+
+.PHONY : src/util/all
+
+# Convenience name for "clean" pass in the directory.
+src/util/clean:
+
+.PHONY : src/util/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/util/preinstall:
+
+.PHONY : src/util/preinstall
+
+#=============================================================================
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
@@ -81,7 +244,7 @@ src/preinstall:
 # Target rules for target src/CMakeFiles/fexchange.dir
 
 # All Build rule for target.
-src/CMakeFiles/fexchange.dir/all:
+src/CMakeFiles/fexchange.dir/all: src/protocols/CMakeFiles/proto.dir/all
 	$(MAKE) -f src/CMakeFiles/fexchange.dir/build.make src/CMakeFiles/fexchange.dir/depend
 	$(MAKE) -f src/CMakeFiles/fexchange.dir/build.make src/CMakeFiles/fexchange.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target fexchange"
@@ -94,7 +257,7 @@ all: src/CMakeFiles/fexchange.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/fexchange.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/fexchange.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles 0
 .PHONY : src/CMakeFiles/fexchange.dir/rule
