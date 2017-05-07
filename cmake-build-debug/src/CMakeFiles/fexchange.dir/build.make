@@ -90,6 +90,7 @@ fexchange_EXTERNAL_OBJECTS =
 
 src/fexchange: src/CMakeFiles/fexchange.dir/main.cpp.o
 src/fexchange: src/CMakeFiles/fexchange.dir/build.make
+src/fexchange: src/protocols/libproto.a
 src/fexchange: src/CMakeFiles/fexchange.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fexchange"
 	cd /Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fexchange.dir/link.txt --verbose=$(VERBOSE)

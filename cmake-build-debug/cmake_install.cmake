@@ -29,6 +29,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/common/cmake_install.cmake")
+  include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/communication/cmake_install.cmake")
+  include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/engine/cmake_install.cmake")
+  include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/monitor/cmake_install.cmake")
+  include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/protocols/cmake_install.cmake")
+  include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/stroage/cmake_install.cmake")
+  include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/util/cmake_install.cmake")
   include("/Users/fenicesun/WorkSpace/fexchange/cmake-build-debug/src/cmake_install.cmake")
 
 endif()

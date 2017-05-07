@@ -34,6 +34,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.7.1/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
+  "../src/common/CMakeLists.txt"
+  "../src/communication/CMakeLists.txt"
+  "../src/engine/CMakeLists.txt"
+  "../src/monitor/CMakeLists.txt"
+  "../src/protocols/CMakeLists.txt"
+  "../src/stroage/CMakeLists.txt"
+  "../src/util/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -45,10 +52,18 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/common/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/communication/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/engine/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/monitor/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/protocols/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/stroage/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/util/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/protocols/CMakeFiles/proto.dir/DependInfo.cmake"
   "src/CMakeFiles/fexchange.dir/DependInfo.cmake"
   )

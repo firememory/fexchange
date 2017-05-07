@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named proto
+
+# Build rule for target.
+proto: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 proto
+.PHONY : proto
+
+# fast build rule for target.
+proto/fast:
+	$(MAKE) -f src/protocols/CMakeFiles/proto.dir/build.make src/protocols/CMakeFiles/proto.dir/build
+.PHONY : proto/fast
+
+#=============================================================================
 # Target rules for targets named fexchange
 
 # Build rule for target.
@@ -131,6 +144,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... proto"
 	@echo "... fexchange"
 .PHONY : help
 
