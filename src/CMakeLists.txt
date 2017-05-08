@@ -1,3 +1,4 @@
+include_directories("/usr/local/include/")
 include_directories(${PROJECT_SRC_DIR}/protocols)
 include_directories("/usr/local/Cellar/protobuf/3.3.0/include/")
 link_directories("/usr/local/Cellar/protobuf/3.3.0/lib/")

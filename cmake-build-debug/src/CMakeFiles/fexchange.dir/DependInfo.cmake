@@ -10,6 +10,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   "/protocols"
   "/usr/local/Cellar/protobuf/3.3.0/include"
   )
