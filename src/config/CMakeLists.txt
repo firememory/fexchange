@@ -1,0 +1,5 @@
+macro(COPY_CONFIG_TO_BUILD_DIR)
+    foreach(filename ${ARGN})
+        FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/${filename} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+    endforeach()
+endmacro(COPY_CONFIG_TO_BUILD_DIR)

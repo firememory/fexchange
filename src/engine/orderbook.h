@@ -7,12 +7,18 @@
 #ifndef FEXCHANGE_ORDERBOOK_H
 #define FEXCHANGE_ORDERBOOK_H
 
+#include <algorithm>
+#include <queue>
+
 namespace engine
 {
 
 class OrderBook
 {
+public:
 
+private:
+    priority_queue<common::Order> m_priority_queue;
 };
 
 }
