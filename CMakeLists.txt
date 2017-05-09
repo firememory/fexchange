@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 MESSAGE(STATUS "compling fexchange...")
 
+add_subdirectory(src/config)
 add_subdirectory(src/common)
 add_subdirectory(src/communication)
 add_subdirectory(src/engine)

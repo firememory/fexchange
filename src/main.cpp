@@ -1,5 +1,9 @@
 #include <iostream>
+#include <libconfig.h++>
 #include "protocols/order.pb.h"
+#include <exception>
+#include <string>
+#include <assert.h>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -20,5 +24,17 @@ int main() {
 
 
     std::cout << order->id() << std::endl;
+
+    libconfig::Config config;
+    try {
+        config.readFile("config/config.cfg");
+
+    } catch(const std::exception &e) {
+        std::cout << e.what() << std::endl;
+    }
+
+    std::string version;
+    assert(config.lookupValue("version", version));
+    std::cout << "version: " << version << std::endl;
     return 0;
 }

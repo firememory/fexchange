@@ -59,37 +59,37 @@ private:
      *
      *
      */
-    long long orderId;
+    long long m_orderId;
 
     /**
      *
      *
      */
-    long long accountId;
+    long long m_accountId;
 
     /**
      *
      *
      */
-    long brokerId;
+    long m_brokerId;
 
     /**
      *
      *
      */
-    std::string securityId;
+    std::string m_securityId;
 
     /**
      *
      *
      */
-    std::chrono::time_point<std::chrono::system_clock> orderTime;
+    std::chrono::time_point<std::chrono::system_clock> m_orderTime;
 
     /**
      *
      *
      */
-    TradeDirection tradeDirection;
+    TradeDirection m_tradeDirection;
 
 
 
